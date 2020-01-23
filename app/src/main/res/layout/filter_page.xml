@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FilterPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/filter_back_button"
+                android:layout_width="45dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center|start"
+                android:src="@drawable/arrow_back_red_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                android:text="Filters"
+                android:textColor="@color/blue"
+                android:textSize="36sp"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_bar_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@color/bottomnavcolor">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/filter_box">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="left"
+                android:text="Price range"
+                android:textColor="#000000"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/filter_price_box_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="From"
+                    android:textColor="@color/hint"
+                    android:textSize="14sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/filter_price_from"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="₹ 0"
+                    android:background="@color/colorPrimary"
+                    >
+
+                </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="To"
+                        android:textColor="@color/hint"
+                        android:textSize="14sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/filter_price_to"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="₹ 100000"
+                        android:background="@color/colorPrimary"
+                        >
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/filter_price_box_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:src="@drawable/arrow_right_blue_24dp"
+                    android:layout_gravity="end">
+
+                </ImageView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/filter_box">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="20dp"
+                android:layout_gravity="left"
+                android:text="Condition"
+                android:textColor="#000000"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="All Conditions"
+                    android:textColor="@color/hint"
+                    android:textSize="14sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="Less than 1 month"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/hint"
+                    android:textSize="14sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="1 month to 12 months"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="30dp"
+                    android:textColor="@color/hint"
+                    android:textSize="14sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="1 year to 2 years"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="30dp"
+                    android:textColor="@color/hint"
+                    android:textSize="14sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="2 year +"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="30dp"
+                    android:textColor="@color/hint"
+                    android:textSize="14sp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="right">
+
+                <RadioGroup
+                    android:id="@+id/filter_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="20dp">
+                    android:checked="true"
+                    <RadioButton
+                        android:id="@+id/filter_radio_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="26dp"
+                        android:layout_gravity="top"
+                        android:button="@drawable/radio_button_design"
+                        android:theme="@style/FilterRadioButtonTheme"
+                        android:checked="true"
+                        android:onClick="checkButton"
+                        >
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/filter_radio_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="26dp"
+                        android:layout_gravity="top"
+                        android:button="@drawable/radio_button_design"
+                        android:theme="@style/FilterRadioButtonTheme"
+                        android:onClick="checkButton"
+
+                        >
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/filter_radio_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="26dp"
+                        android:layout_gravity="top"
+                        android:button="@drawable/radio_button_design"
+                        android:theme="@style/FilterRadioButtonTheme"
+                        android:onClick="checkButton"
+                        >
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/filter_radio_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="26dp"
+                        android:layout_gravity="top"
+                        android:button="@drawable/radio_button_design"
+                        android:theme="@style/FilterRadioButtonTheme"
+                        android:onClick="checkButton"
+                        >
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/filter_radio_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="26dp"
+                        android:layout_gravity="top"
+                        android:button="@drawable/radio_button_design"
+                        android:theme="@style/FilterRadioButtonTheme"
+                        android:onClick="checkButton"
+                        >
+
+                    </RadioButton>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/filter_location_box"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:background="@drawable/filter_box">
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="horizontal">
+
+                 <LinearLayout
+                     android:id="@+id/filter_location_box_1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:orientation="vertical"
+                     android:layout_weight="1"
+                     android:layout_gravity="start">
+
+
+
+
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:paddingTop="10dp"
+                 android:paddingLeft="10dp"
+                 android:layout_gravity="left"
+                 android:text="Location"
+                 android:textColor="#000000"
+                 android:textSize="18sp">
+
+             </TextView>
+
+             <TextView
+                 android:id="@+id/filter_location_text"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="left"
+                 android:paddingLeft="10dp"
+                 android:paddingBottom="10dp"
+                 android:text="All States"
+                 android:textColor="@color/hint"
+                 android:textSize="14sp">
+
+             </TextView>
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/filter_location_box_2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:orientation="vertical"
+                     android:paddingRight="10dp"
+                     android:layout_weight="2"
+                     android:layout_gravity="end">
+
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/arrow_right_blue_24dp"
+                         android:layout_gravity="end">
+
+                     </ImageView>
+
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+
+
+
+
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="horizontal"
+         android:layout_gravity="bottom"
+         android:background="@drawable/filter_box_bottom"
+         >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="bottom"
+             android:layout_marginRight="1dp"
+             android:layout_marginTop="2dp"
+             android:layout_weight="2"
+             android:orientation="vertical"
+             >
+
+             <Button
+                 android:id="@+id/filter_clearall_button"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="@color/colorPrimary"
+                 android:text="Clear all"
+                 android:textColor="@color/hint">
+
+             </Button>
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="bottom"
+             android:layout_marginBottom="10dp"
+             android:layout_marginTop="2dp"
+             android:layout_weight="3.9"
+             android:orientation="vertical"
+             android:background="@color/blue"
+             >
+
+             <LinearLayout
+                 android:id="@+id/bottom_bar_line"
+                 android:layout_width="1px"
+                 android:layout_height="20dp"
+                 android:layout_gravity="center"
+                 android:background="@color/blue"
+                 android:orientation="horizontal">
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="bottom"
+             android:layout_marginTop="2dp"
+             android:layout_marginLeft="1dp"
+             android:layout_weight="2"
+             android:orientation="vertical"
+             >
+
+             <Button
+                 android:id="@+id/filter_apply_button"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="@color/colorPrimary"
+                 android:text="Apply"
+                 android:textColor="@color/red">
+
+             </Button>
+
+         </LinearLayout>
+
+     </LinearLayout>
+
+
+
+
+
+ </LinearLayout>

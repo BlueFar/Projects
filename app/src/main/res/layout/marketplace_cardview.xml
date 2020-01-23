@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview_market"
+    android:layout_width="170dp"
+    android:layout_height="300dp"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    cardview:cardCornerRadius="4dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        >
+
+        <ImageView
+            android:id="@+id/item_image1_id"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:scaleType="centerCrop">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/item_name_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product name"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:paddingStart="5dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/item_condition_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Condition"
+            android:textSize="13sp"
+            android:textColor="@color/hint"
+            android:paddingStart="5dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/item_price_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="₹ 8000"
+            android:textColor="#F14C38"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:paddingStart="5dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/item_description_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/item_product_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/item_owner_name"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/item_image1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible">
+
+        </TextView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

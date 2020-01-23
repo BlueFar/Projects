@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_info_popup"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:layout_gravity="bottom"
+    android:background="@drawable/popup_layout"
+    android:layout_margin="10dp"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#F14C38"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_info_popup_exit_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:background="#F14C38"
+            android:padding="5dp"
+            android:text="X"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#ffffff">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="Offer the asking price"
+        android:textColor="#000000"
+        >
+
+    </TextView>
+
+    <Button
+        android:id="@+id/item_info_popup_asking_price_button"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/asking_price_button"
+        android:text="₹ 8000"
+        android:textSize="18sp">
+
+    </Button>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="#ffffff">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:text="Or enter an offer"
+            android:textColor="#000000"
+            >
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/item_info_popup_enter_price_box"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:background="@color/trial"
+                android:hint="₹"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="18sp">
+
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/item_info_popup_price_submit_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/arrow_forward_blue_24dp"
+                android:background="@drawable/make_offer_button">
+
+            </ImageButton>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

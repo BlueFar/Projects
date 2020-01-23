@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">True Owner</string>
+    <string name="facebook_app_id">419826708698702</string>
+    <string name="fb_login_protocol_scheme">fb419826708698702</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+</resources>

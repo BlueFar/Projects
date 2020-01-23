@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Marketplace_Page">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/marketplace_back_button"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center|start"
+                    android:src="@drawable/arrow_back_red_24dp" />
+
+                <ImageView
+                    android:id="@+id/logo_home"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start"
+                    android:src="@drawable/google_logo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/logo_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/search_blue_24dp" />
+
+                <ImageView
+                    android:id="@+id/logo_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/cart_grey_24dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_bar_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="@color/bottomnavcolor">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@drawable/marketplace_tab_boarder"
+                android:padding="1px">
+
+
+
+            <TextView
+                android:id="@+id/marketplace_results_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Results:1500"
+                android:textAlignment="center"
+                android:textColor="#2c3e50"
+                android:paddingTop="15dp"
+                android:background="@color/colorPrimary">
+
+
+            </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/marketplace_tab_boarder"
+                android:orientation="horizontal"
+                android:padding="1px">
+
+
+                <Button
+                    android:id="@+id/marketplace_sort_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/colorPrimary"
+                    android:text="Sort"
+                    android:textColor="#2c3e50"
+                    android:drawableLeft="@drawable/sort_blue_24dp"
+                    >
+
+                </Button>
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_weight="1"
+                  android:background="@drawable/marketplace_tab_boarder"
+                  android:padding="1px">
+
+
+              <Button
+                  android:id="@+id/marketplace_filter_button"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="25dp"
+                  android:text="Filter"
+                  android:textColor="#2c3e50"
+                  android:drawableLeft="@drawable/filter_blue_24dp"
+                  android:background="@color/colorPrimary">
+
+              </Button>
+
+
+          </LinearLayout>
+
+          </LinearLayout>
+
+
+      </LinearLayout>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/marketplace_recyclerview"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="5dp">
+
+      </androidx.recyclerview.widget.RecyclerView>
+
+  </LinearLayout>

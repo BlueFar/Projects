@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview_filter"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    cardview:cardCornerRadius="4dp"
+    android:background="@color/colorPrimary"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                android:background="@drawable/filter_box"
+            android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/location_filter_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="10dp"
+            android:paddingTop="13dp"
+            android:text="Product name"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
