@@ -281,7 +281,7 @@
                     android:id="@+id/option_two_logo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/google_logo"
+                    android:src="@drawable/ic_local_mall_24px"
                     android:layout_gravity="center"
                     android:layout_marginStart="5dp"
                     >
@@ -358,7 +358,7 @@
                     android:id="@+id/option_three_logo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/google_logo"
+                    android:src="@drawable/ic_find_in_page_24px"
                     android:layout_gravity="center"
                     android:layout_marginStart="5dp"
                     >

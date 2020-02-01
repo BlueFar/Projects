@@ -87,7 +87,7 @@ public class HomeFragment extends Fragment {
         optionthreeLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(getActivity(),RegisterDevicePage.class);
+                Intent intent1 = new Intent(getActivity(),TrackDevicePage.class);
                 startActivity(intent1);
             }
         });
@@ -95,7 +95,7 @@ public class HomeFragment extends Fragment {
         optionThreeText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(getActivity(),Marketplace_Page.class);
+                Intent intent1 = new Intent(getActivity(),TrackDevicePage.class);
                 startActivity(intent1);
             }
         });
@@ -104,7 +104,7 @@ public class HomeFragment extends Fragment {
         optionThreeArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(getActivity(),RegisterDevicePage.class);
+                Intent intent1 = new Intent(getActivity(),TrackDevicePage.class);
                 startActivity(intent1);
             }
         });

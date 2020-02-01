@@ -3,12 +3,12 @@
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="in.trueowner.trueowner">
 
-    <dist:module dist:instant="true" />
-
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <dist:module dist:instant="true" />
 
     <application
         android:allowBackup="true"
@@ -17,7 +17,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegisterDevicePage4"></activity>
+        <activity android:name=".LostDeviceRegisterPage"></activity>
+        <activity android:name=".TrackDevicePage" />
+        <activity android:name=".RegisterDevicePage4" />
         <activity android:name=".RegisterDevicePage3" />
         <activity android:name=".RegisterDevicePage2" />
         <activity android:name=".SellPage" />
@@ -46,11 +48,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id" />
-
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
@@ -67,15 +64,19 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
         <provider
-            android:authorities="in.trueowner.fileprovider"
             android:name="androidx.core.content.FileProvider"
+            android:authorities="in.trueowner.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
-            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"></meta-data>
-
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
         </provider>
     </application>
 

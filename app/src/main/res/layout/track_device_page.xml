@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TrackDevicePage">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/track_device_back_button1"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center|start"
+                    android:src="@drawable/arrow_back_red_24dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_bar_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="@color/bottomnavcolor">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/marketplace_tab_boarder"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:padding="1px">
+
+
+                <Button
+                    android:id="@+id/track_device_tab_button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:text="Track device"
+                    android:textColor="@color/red"
+
+                    android:textSize="16sp">
+
+                </Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/marketplace_tab_boarder"
+                android:padding="1px">
+
+
+                <Button
+                    android:id="@+id/register_device_tab_button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Register lost device"
+                    android:textColor="@color/hint"
+                    android:background="@color/colorPrimary">
+
+                </Button>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Looking to track a device?"
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            >
+
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="16"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            app:hintEnabled="false">
+
+
+            <EditText
+                android:id="@+id/track_device_textbox"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint=" IMEI 1, IMEI 2 or Serial no"
+                android:textColor="#000000"
+                android:background="@drawable/cart_button"
+                android:inputType="text"
+                android:maxLength="16"
+                android:textCursorDrawable="@color/red"
+                android:theme="@style/MyEditText"
+                android:imeOptions="actionDone">
+
+            </EditText>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/track_device_submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/arrow_forward_blue_24dp"
+                android:backgroundTint="@color/bottomnavcolor"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="end">
+
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
