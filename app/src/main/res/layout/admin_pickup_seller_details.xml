@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".AdminPickupSellerDetails">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/blue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/admin_pickup_seller_details_back_button"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|start"
+                    android:src="@drawable/arrow_back_red_24dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_bar_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="@color/bottomnavcolor">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overview"
+            android:layout_margin="20dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seller Name :"
+                    android:textSize="14sp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/blue"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name :"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/blue"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IMEI 1 :"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/blue"
+                    >
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/admin_pickup_seller_details_seller_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="14sp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/blue"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/admin_pickup_seller_details_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NAME"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/blue"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/admin_pickup_seller_details_imei1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/blue"
+                    >
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="50dp"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/admin_pickup_seller_details_accept_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/register_a_device_button"
+                android:text="PICKED FROM SELLER"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

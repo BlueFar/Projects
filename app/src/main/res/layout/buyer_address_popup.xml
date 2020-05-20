@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/address_popup"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_gravity="bottom"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="left"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/item_info_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Set delivery location"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="State"
+            android:textColor="#000000"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/buyer_address_spinner_state"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/form_edittext"
+            android:padding="10dp"
+            android:spinnerMode="dialog"
+            android:textColor="#000000">
+
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="City"
+            android:textColor="#000000"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/buyer_address_spinner_city"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/form_edittext"
+            android:padding="10dp"
+            android:spinnerMode="dialog"
+            android:textColor="#000000">
+
+        </Spinner>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery fee : "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000000">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/buyer_address_delivery_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 0"
+                android:textSize="12sp"
+                android:textColor="#000000">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Note: Pay the delivery fee now and get the fee back through deduction at the time of purchase"
+            android:textColor="#000000"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/proceed_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="PROCEED TO PAYMENT"
+            android:textColor="#ffffff"
+            android:background="@drawable/register_a_device_button">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>

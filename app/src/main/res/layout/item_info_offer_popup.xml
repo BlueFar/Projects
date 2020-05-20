@@ -2,10 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/item_info_popup"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="210dp"
+    android:layout_height="230dp"
     android:layout_gravity="bottom"
     android:background="@drawable/popup_layout"
-    android:layout_margin="10dp"
+
     >
 
     <LinearLayout
@@ -68,6 +68,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:background="#ffffff">
 
 
@@ -86,7 +87,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
 
 
             <EditText

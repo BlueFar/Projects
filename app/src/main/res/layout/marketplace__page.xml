@@ -11,12 +11,12 @@
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
         android:layout_height="110dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/blue"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -27,8 +27,8 @@
 
                 <ImageView
                     android:id="@+id/marketplace_back_button"
-                    android:layout_width="45dp"
-                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="center|start"
                     android:src="@drawable/arrow_back_red_24dp" />
 
@@ -46,25 +46,55 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:orientation="horizontal">
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
+                <TextView
+                    android:id="@+id/marketplace_cart_count"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:text="2"
+                    android:textColor="#ffffff"
+                    android:textSize="8sp"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:background="@drawable/cart_count_grey">
 
-                <ImageView
-                    android:id="@+id/logo_search"
+                </TextView>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:src="@drawable/search_blue_24dp" />
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
 
-                <ImageView
-                    android:id="@+id/logo_cart"
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:src="@drawable/cart_grey_24dp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+                        <ImageView
+                            android:id="@+id/marketplace_cart_button"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="-2dp"
+                            android:layout_marginTop="-3dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/cart_grey_24dp" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -84,30 +114,30 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_weight="1"
-                android:background="@drawable/marketplace_tab_boarder"
-                android:padding="1px">
+            <!--  <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 android:layout_weight="1"
+                 android:background="@drawable/marketplace_tab_boarder"
+                 android:padding="1px">
 
 
 
             <TextView
-                android:id="@+id/marketplace_results_textview"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Results:1500"
-                android:textAlignment="center"
-                android:textColor="#2c3e50"
-                android:paddingTop="15dp"
-                android:background="@color/colorPrimary">
+                 android:id="@+id/marketplace_results_textview"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:text="Results:1500"
+                 android:textAlignment="center"
+                 android:textColor="#2c3e50"
+                 android:paddingTop="15dp"
+                 android:background="@color/colorPrimary">
 
 
-            </TextView>
+             </TextView>
 
-            </LinearLayout>
+             </LinearLayout>-->
 
             <LinearLayout
 

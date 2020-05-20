@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".AdminSellerVerification">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/blue">
+
+
+        <ImageView
+            android:id="@+id/admin_seller_verification_back_button"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|start"
+            android:src="@drawable/arrow_back_red_24dp" />
+
+        <ImageView
+            android:id="@+id/logo_home"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:src="@drawable/google_logo" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Display"
+                android:textColor="@color/blue"
+                android:textSize="12sp">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner_display"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/form_edittext"
+                android:padding="10dp"
+                android:spinnerMode="dialog"
+                android:textColor="#000000">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Touchscreen"
+                android:textColor="@color/blue"
+                android:textSize="12sp">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner_Touchscreen"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/form_edittext"
+                android:padding="10dp"
+                android:spinnerMode="dialog"
+                android:textColor="#000000">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Camera (Front/Back)"
+                android:textColor="@color/blue"
+                android:textSize="12sp">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner_Camera"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/form_edittext"
+                android:padding="10dp"
+                android:spinnerMode="dialog"
+                android:textColor="#000000">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Buttons and Fingerprint"
+                android:textColor="@color/blue"
+                android:textSize="12sp">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner_Buttons_Fingerprint"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/form_edittext"
+                android:padding="10dp"
+                android:spinnerMode="dialog"
+                android:textColor="#000000">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Wifi"
+                android:textColor="@color/blue"
+                android:textSize="12sp">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner_Wifi"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/form_edittext"
+                android:padding="10dp"
+                android:spinnerMode="dialog"
+                android:textColor="#000000">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Bluetooth"
+                android:textColor="@color/blue"
+                android:textSize="12sp">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner_Bluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/form_edittext"
+                android:padding="10dp"
+                android:spinnerMode="dialog"
+                android:textColor="#000000">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Mic"
+                android:textColor="@color/blue"
+                android:textSize="12sp">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner_Mic"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/form_edittext"
+                android:padding="10dp"
+                android:spinnerMode="dialog"
+                android:textColor="#000000">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Speakers"
+                android:textColor="@color/blue"
+                android:textSize="12sp">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner_Speakers"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/form_edittext"
+                android:padding="10dp"
+                android:spinnerMode="dialog"
+                android:textColor="#000000">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Headphone Jack"
+                android:textColor="@color/blue"
+                android:textSize="12sp">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner_Headphone_Jack"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/form_edittext"
+                android:padding="10dp"
+                android:spinnerMode="dialog"
+                android:textColor="#000000">
+
+            </Spinner>
+
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/admin_seller_verification_submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Submit"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:background="@color/lightgreen">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/admin_seller_verification_reject_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Reject"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:background="@drawable/whishlist">
+
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

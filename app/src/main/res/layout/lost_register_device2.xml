@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".LostRegisterDevice2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/blue">
+
+
+        <ImageView
+            android:id="@+id/lost_register_back_button"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|start"
+            android:src="@drawable/arrow_back_red_24dp" />
+
+        <ImageView
+            android:id="@+id/logo_home"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:src="@drawable/google_logo" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Device Details"
+            android:textColor="#000000"
+            android:textSize="14sp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progess_bar_1"
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:layout_marginRight="5dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:background="@color/green">
+
+            </ProgressBar>
+
+            <ProgressBar
+                android:id="@+id/progess_bar_2"
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:layout_marginRight="5dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:background="@color/bottomnavcolor">
+
+            </ProgressBar>
+
+            <ProgressBar
+                android:id="@+id/progess_bar_3"
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:background="@color/bottomnavcolor">
+
+            </ProgressBar>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/lost_register_brand"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/form_edittext"
+                android:cursorVisible="true"
+                android:hint="Brand"
+                android:inputType="textPersonName"
+                android:maxLength="15"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@color/red"
+
+                android:theme="@style/MyEditText">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/lost_register_model"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:hint="Model"
+                android:textColor="#000000"
+                android:background="@drawable/form_edittext"
+                android:inputType="text"
+                android:maxLength="15"
+                android:textCursorDrawable="@color/red"
+                android:theme="@style/MyEditText">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/lost_register_imei_1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:hint="IMEI 1"
+                android:textColor="#000000"
+                android:background="@drawable/form_edittext"
+                android:inputType="number"
+                android:maxLength="15"
+                android:textCursorDrawable="@color/red"
+                android:theme="@style/MyEditText">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            app:hintEnabled="false">
+
+
+            <EditText
+                android:id="@+id/lost_register_imei_2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:hint="IMEI 2"
+                android:textColor="#000000"
+                android:background="@drawable/form_edittext"
+                android:inputType="number"
+                android:maxLength="15"
+                android:textCursorDrawable="@color/red"
+                android:theme="@style/MyEditText">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="16"
+            app:hintEnabled="false">
+
+
+            <EditText
+                android:id="@+id/lost_register_serial_no"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:hint="Serial no"
+                android:textColor="#000000"
+                android:background="@drawable/form_edittext"
+                android:inputType="text"
+                android:maxLength="16"
+                android:textCursorDrawable="@color/red"
+                android:theme="@style/MyEditText"
+                android:imeOptions="actionDone">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:background="@color/colorPrimary"
+        >
+
+        <Button
+            android:id="@+id/lost_register_submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="Next"
+            android:textColor="#ffffff"
+            android:background="@color/blue">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

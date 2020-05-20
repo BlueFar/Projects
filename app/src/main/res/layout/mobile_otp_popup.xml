@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/item_info_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Number Verification"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Otp Code"
+            android:textColor="#000000"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/verification_otp_code"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:hint="OTP"
+            android:textColor="#000000"
+            android:background="@drawable/form_edittext"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textCursorDrawable="@color/red"
+            android:theme="@style/MyEditText">
+
+        </EditText>
+
+
+
+
+
+
+        <Button
+            android:id="@+id/otp_submit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="SUBMIT OTP "
+            android:textColor="#ffffff"
+            android:background="@drawable/register_a_device_button">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

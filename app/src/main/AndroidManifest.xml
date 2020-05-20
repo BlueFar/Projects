@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <dist:module dist:instant="true" />
 
@@ -17,7 +18,59 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LostDeviceRegisterPage"></activity>
+        <activity android:name=".AdminDropBuyerDetails"></activity>
+        <activity android:name=".AdminDropCourierDetails" />
+        <activity android:name=".AdminDropSellerDetails" />
+        <activity android:name=".AdminPickupCourierDetails" />
+        <activity android:name=".AdminPickupReturnDetails" />
+        <activity android:name=".AdminPickupSellerDetails" />
+        <activity android:name=".AdminDropSeller" />
+        <activity android:name=".AdminDropCourier" />
+        <activity android:name=".AdminDropBuyer" />
+        <activity android:name=".AdminPickupReturn" />
+        <activity android:name=".AdminPickupCourier" />
+        <activity android:name=".AdminPickupSeller" />
+        <activity android:name=".AdminDropPage" />
+        <activity android:name=".AdminPickupPage" />
+        <activity android:name=".EmailVerification" />
+        <activity android:name=".MobileVerification" />
+        <activity android:name=".AdminRegisterVerification" />
+        <activity android:name=".AdminRegisterList" />
+        <activity android:name=".AdminHomePage" />
+        <activity android:name=".SellSuccessPage" />
+        <activity android:name=".RegisterDeviceSuccessPage" />
+        <activity android:name=".RegisterDeviceVerificationPage" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".MyOrdersBill" />
+        <activity android:name=".BuyerSuccessfulPage" />
+        <activity android:name=".BuyerFinalOverview" />
+        <activity android:name=".SellerPaymentAwaiting" />
+        <activity android:name=".SellerFinalConfirmation" />
+        <activity android:name=".BuyerFinalConformation" />
+        <activity android:name=".TrackingOrder" />
+        <activity android:name=".SellerAwaiting" />
+        <activity android:name=".BuyerAwaiting" />
+        <activity android:name=".BuyerVerificationReviewPage" />
+        <activity android:name=".AdminSellerVerificationSuccessPage" />
+        <activity android:name=".AdminSellerVerification" />
+        <activity android:name=".AdminSellerList" />
+        <activity android:name=".SellerVerificationPage" />
+        <activity android:name=".MyOffersPage" />
+        <activity android:name=".SellDeviceRegister7" />
+        <activity android:name=".SellDeviceRegister6" />
+        <activity android:name=".SellDeviceRegister5" />
+        <activity android:name=".SellDeviceRegister4" />
+        <activity android:name=".SellDeviceRegister3" />
+        <activity android:name=".SellDeviceRegister2" />
+        <activity android:name=".SellDeviceRegister1" />
+        <activity android:name=".TrackResultFoundPage" />
+        <activity android:name=".TrackNoResultPage" />
+        <activity android:name=".LostRegisterSuccessPage" />
+        <activity android:name=".LostRegisterDevice4" />
+        <activity android:name=".LostRegisterDevice3" />
+        <activity android:name=".LostRegisterDevice2" />
+        <activity android:name=".LostRegisterDevice1" />
+        <activity android:name=".LostDeviceRegisterPage" />
         <activity android:name=".TrackDevicePage" />
         <activity android:name=".RegisterDevicePage4" />
         <activity android:name=".RegisterDevicePage3" />
@@ -67,7 +120,7 @@
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id" />
+            android:value="419826708698702" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

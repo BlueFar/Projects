@@ -2,17 +2,17 @@ package in.trueowner.trueowner;
 
 public class Marketplace_Get_Set {
 
-    private String Category,Description,Name,ProductID,OwnerName, State, City;
+    private String Category,Description,ProductName,ProductID,OwnerName, State, City;
     private long Price,Condition;
     private String Image1;
 
     public Marketplace_Get_Set() {
     }
 
-    public Marketplace_Get_Set(String Category, String Description, String Name, String ProductID, String OwnerName, long Price, long Condition, String Image1, String State, String City) {
+    public Marketplace_Get_Set(String Category, String Description, String ProductName, String ProductID, String OwnerName, long Price, long Condition, String Image1, String State, String City) {
         this.Category = Category;
         this.Description = Description;
-        this.Name = Name;
+        this.ProductName = ProductName;
         this.ProductID = ProductID;
         this.OwnerName = OwnerName;
          this.Price = Price;
@@ -35,7 +35,7 @@ public class Marketplace_Get_Set {
     }
 
     public String getName() {
-        return Name;
+        return ProductName;
     }
 
     public long getCondition() { return Condition;  }

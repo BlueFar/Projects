@@ -221,7 +221,7 @@ public class FilterPage extends AppCompatActivity {
                 mSharedPref = getSharedPreferences("TemporaryFilterSettings",MODE_PRIVATE);
                 editor = mSharedPref.edit();
                 editor.putLong("TemporaryCondition1", 0);
-                editor.putLong("TemporaryCondition2", 1);
+                editor.putLong("TemporaryCondition2", 3);
                 editor.apply();
 
                 break;
@@ -230,8 +230,8 @@ public class FilterPage extends AppCompatActivity {
 
                 mSharedPref = getSharedPreferences("TemporaryFilterSettings",MODE_PRIVATE);
                 editor = mSharedPref.edit();
-                editor.putLong("TemporaryCondition1", 1);
-                editor.putLong("TemporaryCondition2", 12);
+                editor.putLong("TemporaryCondition1", 3);
+                editor.putLong("TemporaryCondition2", 6);
                 editor.apply();
 
                 break;
@@ -240,8 +240,8 @@ public class FilterPage extends AppCompatActivity {
 
                 mSharedPref = getSharedPreferences("TemporaryFilterSettings",MODE_PRIVATE);
                 editor = mSharedPref.edit();
-                editor.putLong("TemporaryCondition1", 12);
-                editor.putLong("TemporaryCondition2", 24);
+                editor.putLong("TemporaryCondition1", 6);
+                editor.putLong("TemporaryCondition2", 12);
                 editor.apply();
 
                 break;
@@ -250,7 +250,7 @@ public class FilterPage extends AppCompatActivity {
 
                 mSharedPref = getSharedPreferences("TemporaryFilterSettings",MODE_PRIVATE);
                 editor = mSharedPref.edit();
-                editor.putLong("TemporaryCondition1", 24);
+                editor.putLong("TemporaryCondition1", 12);
                 editor.putLong("TemporaryCondition2", 120);
                 editor.apply();
 

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".EditProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/blue">
+
+
+        <ImageView
+            android:id="@+id/edit_profile_back_button"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|start"
+            android:src="@drawable/arrow_back_red_24dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="25"
+            android:layout_marginTop="30dp"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/edit_profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/form_edittext"
+                android:cursorVisible="true"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:maxLength="25"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@color/red"
+
+                android:theme="@style/MyEditText">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/edit_profile_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:hint="Email"
+                android:textColor="#000000"
+                android:background="@drawable/form_edittext"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:textCursorDrawable="@color/red"
+                android:theme="@style/MyEditText">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/edit_profile_number"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:hint="Mobile Number"
+                android:textColor="#000000"
+                android:background="@drawable/form_edittext"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textCursorDrawable="@color/red"
+                android:theme="@style/MyEditText">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:background="@color/colorPrimary"
+        >
+
+        <Button
+            android:id="@+id/edit_profile_submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="UPDATE DETAILS"
+            android:textColor="#ffffff"
+            android:background="@color/blue">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

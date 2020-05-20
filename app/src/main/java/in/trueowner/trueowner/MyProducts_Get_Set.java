@@ -2,20 +2,22 @@ package in.trueowner.trueowner;
 
 public class MyProducts_Get_Set {
 
-    private String Name,ProductID;
+    private String ProductName,ProductID, UserID;
     private long PurchasedPrice;
-    private Boolean Sale, VerificationStatus;
+    private Boolean SaleStatus, VerificationStatus;
 
     public MyProducts_Get_Set() {
     }
 
-    public MyProducts_Get_Set( String Name, String ProductID, long PurchasedPrice, Boolean Sale, Boolean VerificationStatus) {
+    public MyProducts_Get_Set( String ProductName, String ProductID, long PurchasedPrice, Boolean SaleStatus, Boolean VerificationStatus, String UserID) {
 
-        this.Name = Name;
+        this.ProductName = ProductName;
         this.ProductID = ProductID;
          this.PurchasedPrice = PurchasedPrice;
-        this.Sale = Sale;
+        this.SaleStatus = SaleStatus;
         this.VerificationStatus = VerificationStatus;
+        this.UserID = UserID;
+
     }
 
      public long getPurchasedPrice() {
@@ -23,12 +25,14 @@ public class MyProducts_Get_Set {
     }
 
     public String getName() {
-        return Name;
+        return ProductName;
     }
 
     public String getProductID() { return ProductID; }
 
-    public Boolean getSale() {   return Sale; }
+    public Boolean getSale() {   return SaleStatus; }
 
     public Boolean getVerificationStatus() {  return VerificationStatus; }
+
+    public String getUserID() { return UserID; }
 }

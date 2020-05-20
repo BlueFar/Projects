@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:background="@color/colorPrimary"
+    tools:context=".SellSuccessPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:orientation="vertical"
+            android:layout_gravity="top"
+            android:gravity="top"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/check_circle_green_70dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Listed !"
+                android:textSize="24dp"
+                android:layout_gravity="center"
+                android:textColor="@color/blue"
+                >
+
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="device has been added to marketplace, please check back to see if there is any offers made."
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                >
+
+
+            </TextView>
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sell_success_home_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Home"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@color/green"
+            >
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -14,7 +14,13 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class SupportPage extends AppCompatActivity {
 
@@ -22,6 +28,8 @@ public class SupportPage extends AppCompatActivity {
     private ImageView backbutton;
     FloatingActionButton submitbutton;
     Dialog successpopup;
+    String userid, name, email, message;
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,13 +53,26 @@ public class SupportPage extends AppCompatActivity {
 
         submitbutton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(final View v) {
 
-                ShowPopup(v) ;
+                final Map<String, Object> support = new HashMap<>();
+                support.put("FullName", name);
+                support.put("Email", email);
+                support.put("Message", message);
 
-                namebox.setText("");
-                emailbox.setText("");
-                messagebox.setText("");
+                DocumentReference dr = db.collection("Support").document(userid);
+                dr.set(support).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+
+                        ShowPopup(v) ;
+
+                        namebox.setText("");
+                        emailbox.setText("");
+                        messagebox.setText("");
+
+                    }
+                });
             }
         });
 

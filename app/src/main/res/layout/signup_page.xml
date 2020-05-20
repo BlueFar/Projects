@@ -373,6 +373,7 @@
             android:layout_marginBottom="6dp"
             android:background="@color/hint"></View>
 
+
         <Button
             android:id="@+id/signup"
             android:layout_width="300dp"

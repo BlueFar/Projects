@@ -9,5 +9,9 @@
     <color name="facebook">#1778F2</color>
     <color name="trial">#E0E0E0</color>
     <color name="blue">#2C3E50</color>
+    <color name="blue3">#FA263347</color>
+    <color name="blue2">#30435A</color>
     <color name="red">#F14C38</color>
+    <color name="green">#00972F</color>
+    <color name="lightgreen">#56db8d</color>
 </resources>

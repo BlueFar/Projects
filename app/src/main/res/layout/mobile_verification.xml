@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".MobileVerification">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+
+        <ImageView
+            android:id="@+id/logo_home"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:src="@drawable/google_logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:gravity="top"
+                android:layout_marginTop="20dp"
+                android:background="@color/blue"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:background="@color/blue">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/chat_white40dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your phone number is required to provide "
+                            android:textSize="14dp"
+                            android:layout_gravity="center"
+                            android:textColor="#ffffff"
+                            >
+
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="safety and security"
+                            android:textSize="14dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:textColor="#ffffff"
+                            >
+
+
+                        </TextView>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                app:hintEnabled="false">
+
+
+                <EditText
+                    android:id="@+id/verification_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:hint="Mobile number"
+                    android:textColor="#000000"
+                    android:background="@drawable/form_edittext"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textCursorDrawable="@color/red"
+                    android:theme="@style/MyEditText">
+
+                </EditText>
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:gravity="bottom">
+
+        <Button
+            android:id="@+id/verification_submit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="VERIFY NUMBER"
+            android:textColor="#ffffff"
+            android:background="@color/blue"
+            android:layout_gravity="bottom"
+            android:gravity="center">
+
+        </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>

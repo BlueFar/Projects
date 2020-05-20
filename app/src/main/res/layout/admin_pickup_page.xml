@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".AdminPickupPage">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/blue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/pickup_page_back_button"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|start"
+                    android:src="@drawable/arrow_back_red_24dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_bar_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="@color/bottomnavcolor">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/pickup_seller_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="PICKUP SELLER PRODUCT"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="@color/blue">
+
+        </Button>
+
+
+        <Button
+            android:id="@+id/pickup_courier_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="PICKUP FROM COURIER"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="@color/blue">
+
+        </Button>
+
+        <Button
+            android:id="@+id/pickup_returned_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="RETURNED FROM BUYER"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="@color/blue">
+
+        </Button>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

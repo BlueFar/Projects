@@ -15,8 +15,8 @@
 
         <ImageView
             android:id="@+id/support_back_button"
-            android:layout_width="45dp"
-            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
             android:layout_gravity="center|start"
             android:src="@drawable/arrow_back_red_24dp" />
 

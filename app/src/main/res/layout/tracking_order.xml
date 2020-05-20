@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".TrackingOrder">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/track_order_back_button"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|start"
+                    android:src="@drawable/arrow_back_red_24dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_bar_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="@color/bottomnavcolor">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            >
+
+        <View
+            android:id="@+id/order_confirmed_view1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/track_order_complete">
+
+        </View>
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/hint"
+                >
+
+            </View>
+
+            <View
+                android:id="@+id/picked_seller_view2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_ongoing"
+                android:visibility="visible">
+
+            </View>
+
+            <View
+                android:id="@+id/picked_seller_view2.1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_complete"
+                android:visibility="gone">
+
+            </View>
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/hint"
+                >
+
+            </View>
+
+            <View
+                android:id="@+id/shipped_view3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_pending"
+                android:visibility="visible">
+
+            </View>
+
+            <View
+                android:id="@+id/shipped_view3.1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_ongoing"
+                android:visibility="gone">
+
+            </View>
+
+            <View
+                android:id="@+id/shipped_view3.2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_complete"
+                android:visibility="gone">
+
+            </View>
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/hint"
+                >
+
+            </View>
+
+            <View
+                android:id="@+id/picked_buyer_view4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_pending"
+                android:visibility="visible">
+
+            </View>
+
+            <View
+                android:id="@+id/picked_buyer_view4.1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_ongoing"
+                android:visibility="gone">
+
+            </View>
+
+            <View
+                android:id="@+id/picked_buyer_view4.2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_complete"
+                android:visibility="gone">
+
+            </View>
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/hint"
+                >
+
+            </View>
+
+            <View
+                android:id="@+id/order_complete_view5"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_pending"
+                android:visibility="visible">
+
+            </View>
+
+            <View
+                android:id="@+id/order_complete_view5.1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_ongoing"
+                android:visibility="gone">
+
+            </View>
+
+            <View
+                android:id="@+id/order_complete_view5.2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_complete"
+                android:visibility="gone">
+
+            </View>
+
+
+            <View
+                android:id="@+id/returned_view6"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_pending"
+                android:visibility="gone">
+
+            </View>
+
+            <View
+                android:id="@+id/returned_view6.1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_ongoing"
+                android:visibility="gone">
+
+            </View>
+
+            <View
+                android:id="@+id/returned_view6.2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_complete"
+                android:visibility="gone">
+
+            </View>
+
+            <View
+                android:id="@+id/line67"
+                android:layout_width="4dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/hint"
+                android:visibility="gone"
+                >
+
+            </View>
+
+            <View
+                android:id="@+id/shippedback_view7"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_pending"
+                android:visibility="gone">
+
+            </View>
+
+            <View
+                android:id="@+id/shippedback_view7.1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_ongoing"
+                android:visibility="gone">
+
+            </View>
+
+            <View
+                android:id="@+id/shippedback_view7.2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_complete"
+                android:visibility="gone">
+
+            </View>
+
+            <View
+                android:id="@+id/line78"
+                android:layout_width="4dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/hint"
+                android:visibility="gone"
+                >
+
+            </View>
+
+            <View
+                android:id="@+id/receivedback_view8"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_pending"
+                android:visibility="gone">
+
+            </View>
+
+            <View
+                android:id="@+id/receivedback_view8.1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_ongoing"
+                android:visibility="gone">
+
+            </View>
+
+            <View
+                android:id="@+id/receivedback_view8.2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_complete"
+                android:visibility="gone">
+
+            </View>
+
+            <View
+                android:id="@+id/line89"
+                android:layout_width="4dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/hint"
+                android:visibility="gone"
+                >
+
+            </View>
+
+            <View
+                android:id="@+id/picked_view9"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_pending"
+                android:visibility="gone">
+
+            </View>
+
+            <View
+                android:id="@+id/picked_view9.1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_ongoing"
+                android:visibility="gone">
+
+            </View>
+
+            <View
+                android:id="@+id/picked_view9.2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/track_order_complete"
+                android:visibility="gone">
+
+            </View>
+
+        </LinearLayout>
+
+        2
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/track_order_text1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="2dp"
+                android:text="Order Confirmed"
+                android:textColor="#000000"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/track_order_text2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="80dp"
+                android:text="Picked by seller end local executive"
+                android:textSize="14sp"
+                android:textColor="#000000">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/track_order_text3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="80dp"
+                android:text="Shipped"
+                android:textSize="14sp"
+                android:textColor="#000000">
+
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/track_order_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Picked by buyer end local executive"
+                    android:textSize="14sp"
+                    android:textColor="#000000">
+
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/track_order_call_button1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/call_green_24dp"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:background="@color/colorPrimary"></ImageButton>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/track_order_text5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="80dp"
+                android:text="Order Complete"
+                android:textSize="14sp"
+                android:textColor="#000000">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/track_order_text6"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="80dp"
+                android:text="Buyer cancelled, picked for return"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:visibility="gone">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/track_order_text7"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="80dp"
+                android:text="Shipped for return"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:visibility="gone">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/track_order_text8"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="80dp"
+                android:text="Picked up by seller end local executive"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:visibility="gone">
+
+            </TextView>
+
+                <ImageButton
+                    android:id="@+id/track_order_call_button2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/call_green_24dp"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:background="@color/colorPrimary"></ImageButton>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/track_order_text9"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="80dp"
+                android:text="Order Returned"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:visibility="gone">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/track_order_home_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="HOME"
+            android:visibility="visible"
+            android:background="@color/lightgreen">
+
+        </Button>
+
+        <Button
+            android:id="@+id/track_order_details_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="OrderDetails"
+            android:visibility="gone"
+            android:background="@color/lightgreen">
+
+        </Button>
+
+        <Button
+            android:id="@+id/track_order_payment_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="PaymentDetails"
+            android:visibility="gone"
+            android:background="@color/lightgreen">
+
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>

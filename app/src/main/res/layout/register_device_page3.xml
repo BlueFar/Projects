@@ -10,15 +10,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:orientation="horizontal"
-        android:background="@color/colorPrimary">
+        android:background="@color/blue">
 
 
         <ImageView
             android:id="@+id/register_back_button3"
-            android:layout_width="45dp"
-            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
             android:layout_gravity="center|start"
             android:src="@drawable/arrow_back_red_24dp" />
 
@@ -63,7 +63,7 @@
                 android:layout_height="5dp"
                 android:layout_marginRight="5dp"
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                android:background="@color/blue">
+                android:background="@color/bottomnavcolor">
 
             </ProgressBar>
 
@@ -73,7 +73,7 @@
                 android:layout_height="5dp"
                 android:layout_marginRight="5dp"
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                android:background="@color/blue">
+                android:background="@color/bottomnavcolor">
 
             </ProgressBar>
 

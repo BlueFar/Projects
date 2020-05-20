@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".SellerVerificationPage">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/seller_verification_back_button1"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|start"
+                    android:src="@drawable/arrow_back_red_24dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_bar_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="@color/bottomnavcolor">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:gravity="top"
+        android:background="@color/blue"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:background="@color/blue">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chat_white40dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For a easy transaction inform the buyer to"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    >
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="be prepared to accept the offer once your"
+                    android:textSize="14dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    >
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="product condition is verified to save time"
+                    android:textSize="14dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    >
+
+
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="16"
+                android:layout_gravity="center"
+                app:hintEnabled="false">
+
+
+                <EditText
+                    android:id="@+id/seller_verification_textbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Verification Code"
+                    android:textColor="#000000"
+                    android:background="@drawable/cart_button"
+                    android:inputType="text"
+                    android:maxLength="16"
+                    android:paddingLeft="5dp"
+                    android:textCursorDrawable="@color/red"
+                    android:theme="@style/MyEditText"
+                    android:imeOptions="actionDone">
+
+                </EditText>
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/seller_verification_submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/arrow_forward_blue_24dp"
+                android:backgroundTint="@color/bottomnavcolor"
+                android:background="@color/colorPrimary"
+                android:layout_marginBottom="12dp"
+                android:layout_gravity="end">
+
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="90dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/blue"
+                android:text="Note: Please carry the device you wish to sell to verify with our executive">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

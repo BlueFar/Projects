@@ -16,8 +16,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@color/blue">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -27,8 +28,8 @@
 
                 <ImageView
                     android:id="@+id/track_device_back_button1"
-                    android:layout_width="45dp"
-                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="center|start"
                     android:src="@drawable/arrow_back_red_24dp" />
 
@@ -131,11 +132,36 @@
 
         </TextView>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="search through IMEI 1, IMEI 2 or Serial no of the "
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            >
+
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="device below "
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            >
+
+
+        </TextView>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:gravity="center">
 
 
@@ -154,7 +180,7 @@
                 android:id="@+id/track_device_textbox"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:hint=" IMEI 1, IMEI 2 or Serial no"
+                android:hint=""
                 android:textColor="#000000"
                 android:background="@drawable/cart_button"
                 android:inputType="text"

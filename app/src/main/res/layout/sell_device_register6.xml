@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".SellDeviceRegister6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/blue">
+
+
+        <ImageView
+            android:id="@+id/sell_register_back_button6"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|start"
+            android:src="@drawable/arrow_back_red_24dp" />
+
+        <ImageView
+            android:id="@+id/logo_home"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:src="@drawable/google_logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Device Pictures"
+            android:textColor="#000000"
+            android:textSize="14sp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progess_bar_1"
+                android:layout_width="25dp"
+                android:layout_height="5dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:background="@color/green">
+
+            </ProgressBar>
+
+            <ProgressBar
+                android:id="@+id/progess_bar_2"
+                android:layout_width="25dp"
+                android:layout_height="5dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:background="@color/green">
+
+            </ProgressBar>
+
+            <ProgressBar
+                android:id="@+id/progess_bar_3"
+                android:layout_width="25dp"
+                android:layout_height="5dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:background="@color/green">
+
+            </ProgressBar>
+
+            <ProgressBar
+                android:id="@+id/progess_bar_4"
+                android:layout_width="25dp"
+                android:layout_height="5dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:background="@color/green">
+
+            </ProgressBar>
+
+            <ProgressBar
+                android:id="@+id/progess_bar_5"
+                android:layout_width="25dp"
+                android:layout_height="5dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:background="@color/green">
+
+            </ProgressBar>
+
+            <ProgressBar
+                android:id="@+id/progess_bar_6"
+                android:layout_width="25dp"
+                android:layout_height="5dp"
+                android:layout_marginRight="5dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:background="@color/bottomnavcolor">
+
+            </ProgressBar>
+
+            <ProgressBar
+                android:id="@+id/progess_bar_7"
+                android:layout_width="150dp"
+                android:layout_height="5dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:background="@color/bottomnavcolor">
+
+            </ProgressBar>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload picture of top (6/6)"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:layout_gravity="center">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp">
+
+              <ImageView
+                  android:layout_width="200dp"
+                  android:layout_height="200dp"
+                  android:src="@drawable/top"
+                  android:layout_gravity="center">
+
+
+              </ImageView>
+
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="50dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:orientation="horizontal">
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:orientation="vertical">
+
+
+                  <ImageView
+                      android:id="@+id/sell_register_image_upload6"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="10dp"
+                      android:layout_gravity="start"
+                      android:src="@drawable/camera_red_100dp">
+
+                  </ImageView>
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_weight="1"
+                  >
+
+
+                  <ImageView
+                      android:id="@+id/sell_register_browse6"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingRight="10dp"
+                      android:src="@drawable/photo_red_100dp"
+                      android:layout_gravity="end"
+                      >
+
+                  </ImageView>
+
+              </LinearLayout>
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:orientation="horizontal">
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:orientation="vertical">
+
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="10dp"
+                      android:layout_gravity="start"
+                      android:text="Take a photo"
+                      android:textSize="18sp"
+                      android:textColor="#000000"
+                      >
+
+                  </TextView>
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_weight="1"
+                  >
+
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingRight="10dp"
+                      android:text="Browse gallery"
+                      android:textColor="#000000"
+                      android:textSize="18sp"
+                      android:layout_gravity="end"
+                      >
+
+                  </TextView>
+
+              </LinearLayout>
+
+          </LinearLayout>
+
+      </LinearLayout>
+
+  </LinearLayout>

@@ -2,19 +2,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
 
     <LinearLayout
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="60dp"
         android:background="@color/colorPrimary"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="@color/blue">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,17 +38,58 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-
-                <ImageView
-                    android:id="@+id/logo_cart"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_margin="10dp"
+                <TextView
+                    android:id="@+id/home_cart_count"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:text="2"
+                    android:textColor="#ffffff"
+                    android:textSize="8sp"
                     android:layout_gravity="end"
-                    android:src="@drawable/cart_grey_24dp" />
+                    android:gravity="center"
+                    android:background="@drawable/cart_count">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/blue">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue"
+                        android:orientation="vertical">
+
+
+
+                        <ImageView
+                            android:id="@+id/home_cart_button"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="-2dp"
+                            android:layout_marginTop="-3dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/cart_grey_24dp"
+                            android:background="@color/blue"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -54,15 +97,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="@color/blue">
 
-            <ImageView
+        <!--    <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
                 android:layout_gravity="bottom"
-                android:src="@drawable/location_grey_24dp">
-            </ImageView>
+                android:src="@drawable/my_location_grey_24dp">
+            </ImageView> -->
 
             <TextView
                 android:layout_width="60dp"
@@ -70,18 +114,18 @@
                 android:layout_gravity="bottom"
                 android:paddingTop="18dp"
                 android:text="Location"
-                android:textColor="@color/hint" >
+                android:textColor="@color/blue" >
 
             </TextView>
 
-            <ImageView
+        <!--    <ImageView
                 android:layout_width="20dp"
                 android:layout_height="30dp"
                 android:layout_gravity="bottom"
                 android:paddingTop="10dp"
                 android:src="@drawable/arrow_down_grey_24dp">
 
-            </ImageView>
+            </ImageView> -->
 
 
         </LinearLayout>
@@ -104,17 +148,18 @@
     <LinearLayout
         android:id="@+id/add"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="240dp"
         android:background="@color/colorPrimary"
         android:layout_below="@+id/top_bar_line">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="15dp"
-            android:background="#ffffff">
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary">
 
-            <Button
+     <!--       <Button
                 android:id="@+id/image_changer_button1"
                 android:layout_width="10dp"
                 android:layout_height="10dp"
@@ -145,9 +190,17 @@
                 android:background="@drawable/image_changer_design"
                 android:layout_gravity="bottom|center_vertical">
 
-            </Button>
+            </Button> -->
 
 
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerImageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                >
+            </androidx.viewpager2.widget.ViewPager2>
 
         </LinearLayout>
 
@@ -172,17 +225,18 @@
     <LinearLayout
         android:id="@+id/option_one"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
         android:orientation="vertical"
         android:layout_below="@+id/option_text"
-        android:background="#ffffff">
+        android:background="@color/colorPrimary">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:background="#ffffff">
 
@@ -192,28 +246,29 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:id="@+id/option_line"
-                    android:layout_width="2dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/go_button_2"
-                    android:orientation="vertical">
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/home_gradiant1">
+
+                    <ImageView
+                        android:id="@+id/option_one_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_home_45dp"
+                        android:layout_gravity="center"
+                        >
+
+                    </ImageView>
 
                 </LinearLayout>
 
-                <ImageView
-                    android:id="@+id/option_one_logo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/google_logo"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    >
 
-                </ImageView>
 
                 <TextView
                     android:id="@+id/option_one_text"
-                    android:layout_width="230dp"
+                    android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:paddingTop="23dp"
@@ -227,18 +282,32 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:gravity="end">
 
                 <ImageView
                     android:id="@+id/option_one_arrow"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="end"
-                    android:src="@drawable/arrow_right_grey_24dp">
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_home_plus_60dp">
 
                 </ImageView>
+                    <LinearLayout
+                        android:id="@+id/option_line"
+                        android:layout_width="4dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/home_gradiant1"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                    </LinearLayout>
 
             </LinearLayout>
+
+
 
             </LinearLayout>
 
@@ -249,10 +318,11 @@
     <LinearLayout
         android:id="@+id/option_two"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
         android:orientation="vertical"
         android:layout_below="@+id/option_one"
         android:background="#ffffff">
@@ -270,27 +340,28 @@
 
                 <LinearLayout
                     android:id="@+id/option_line2"
-                    android:layout_width="2dp"
+                    android:layout_width="4dp"
                     android:layout_height="60dp"
-                    android:background="@color/hint"
-                    android:orientation="vertical">
+                    android:background="@drawable/home_gradiant2"
+                    android:orientation="vertical"
+                    android:visibility="visible">
 
                 </LinearLayout>
 
+
                 <ImageView
-                    android:id="@+id/option_two_logo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_local_mall_24px"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    >
+                    android:id="@+id/option_two_arrow"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_home_left_arrow_24dp">
 
                 </ImageView>
 
                 <TextView
                     android:id="@+id/option_two_text"
-                    android:layout_width="230dp"
+                    android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:paddingTop="23dp"
@@ -306,14 +377,27 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/option_two_arrow"
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="end"
-                    android:src="@drawable/arrow_right_grey_24dp">
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="end"
+                        android:gravity="center"
+                        android:background="@drawable/home_gradiant2">
 
-                </ImageView>
+                        <ImageView
+                            android:id="@+id/option_two_logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_local_mall_24px"
+                            android:layout_gravity="center"
+                            >
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+
 
                 </LinearLayout>
 
@@ -326,17 +410,18 @@
     <LinearLayout
         android:id="@+id/option_three"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
         android:orientation="vertical"
         android:layout_below="@+id/option_two"
         android:background="#ffffff">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:background="#ffffff">
 
@@ -346,28 +431,29 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:id="@+id/option_line3"
-                    android:layout_width="2dp"
-                    android:layout_height="60dp"
-                    android:background="#F14C38"
-                    android:orientation="vertical">
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/home_gradiant3">
+
+                    <ImageView
+                        android:id="@+id/option_three_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_home_find__45dp"
+                        android:layout_gravity="center"
+                        >
+
+                    </ImageView>
 
                 </LinearLayout>
 
-                <ImageView
-                    android:id="@+id/option_three_logo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_find_in_page_24px"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    >
 
-                </ImageView>
 
                 <TextView
                     android:id="@+id/option_three_text"
-                    android:layout_width="230dp"
+                    android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:paddingTop="23dp"
@@ -381,7 +467,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:gravity="end">
 
 
 
@@ -390,11 +478,24 @@
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="end"
-                    android:src="@drawable/arrow_right_grey_24dp">
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_home_fullscreen__60dp">
 
                 </ImageView>
 
+                    <LinearLayout
+                        android:id="@+id/option_line3"
+                        android:layout_width="4dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/home_gradiant3"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                    </LinearLayout>
+
                 </LinearLayout>
+
+
 
             </LinearLayout>
 

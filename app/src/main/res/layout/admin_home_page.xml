@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".AdminHomePage">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/blue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_bar_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="@color/bottomnavcolor">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/registration_verification_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Register Verification"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="@color/blue">
+
+        </Button>
+
+        <Button
+            android:id="@+id/seller_verification_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Seller Verification"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="@color/blue">
+
+        </Button>
+
+        <Button
+            android:id="@+id/products_drop_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Products Drop List"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="@color/blue">
+
+        </Button>
+
+        <Button
+            android:id="@+id/products_pick_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Products Pickup List"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="@color/blue">
+
+        </Button>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

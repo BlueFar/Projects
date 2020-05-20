@@ -82,7 +82,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/sell_or_offers_button"
+                    android:id="@+id/sell_or_remove_sale"
                     android:layout_width="100dp"
                     android:layout_height="40dp"
                     android:text="Sell"
@@ -105,6 +105,21 @@
                     android:textSize="10sp"
                     android:background="@drawable/cart_button"
                     android:visibility="visible"
+                    android:padding="10dp"
+                    >
+
+                </Button>
+
+                <Button
+                    android:id="@+id/offers_button"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Report Lost"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/red"
+                    android:textSize="10sp"
+                    android:background="@drawable/cart_button"
+                    android:visibility="gone"
                     android:padding="10dp"
                     >
 

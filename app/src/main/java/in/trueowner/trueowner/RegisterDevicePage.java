@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
@@ -14,8 +15,8 @@ public class RegisterDevicePage extends AppCompatActivity {
 
     ImageView backbutton;
     EditText brand, model, imei1, imei2, serialno;
-    FloatingActionButton submitbutton;
-    String brandtemp, modeltemp, imei1temp, imei2temp, serialnotemp;
+    Button submitbutton;
+    String brandtemp, modeltemp, imei1temp, imei2temp, serialnotemp,picbilltemp;
 
 
     @Override
@@ -29,7 +30,10 @@ public class RegisterDevicePage extends AppCompatActivity {
         imei1 = (EditText) findViewById(R.id.register_imei_1);
         imei2 = (EditText) findViewById(R.id.register_imei_2);
         serialno = (EditText) findViewById(R.id.register_serial_no);
-        submitbutton = (FloatingActionButton) findViewById(R.id.register_submit_button);
+        submitbutton = (Button) findViewById(R.id.register_submit_button);
+
+        Intent intent = getIntent();
+        picbilltemp = intent.getExtras().getString("PicBill");
 
         backbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +75,7 @@ public class RegisterDevicePage extends AppCompatActivity {
                 intent.putExtra("IMEI1",imei1temp);
                 intent.putExtra("IMEI2",imei2temp);
                 intent.putExtra("SerialNo",serialnotemp);
+                intent.putExtra("PicBill", picbilltemp);
                 startActivity(intent);
 
             }

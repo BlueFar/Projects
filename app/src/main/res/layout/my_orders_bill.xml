@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".MyOrdersBill">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/blue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/bill_back_button"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|start"
+                    android:src="@drawable/arrow_back_red_24dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_bar_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="@color/bottomnavcolor">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Details"
+            android:layout_margin="20dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="15dp"
+            android:background="@drawable/whishlist"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@color/colorPrimary">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order date :"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/blue"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order status :"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="start"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/colorPrimary">
+
+
+                <TextView
+                    android:id="@+id/bill_order_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8000"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/blue"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/bill_order_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8000"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/blue"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Details"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:background="@drawable/whishlist"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/bill_item_image1_id"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="10dp"
+                    android:scaleType="centerCrop">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bill_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Product name"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+                    android:layout_gravity="left"
+                    android:paddingRight="5dp"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Qty: 1"
+                    android:textSize="12sp"
+                    android:textColor="@color/hint"
+                    android:padding="5dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overview"
+            android:layout_margin="20dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="3dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@color/colorPrimary">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Final product price :"
+                    android:textSize="14sp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/blue"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="18dp"
+                    android:text="Delivery fee deduction :"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/registration_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="18dp"
+                    android:text="New registration fee :"
+                    android:textColor="@color/blue"
+                    android:visibility="visible"
+                    android:textSize="14sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total amount :"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="30dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/bill_product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8000"
+                    android:textSize="14sp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/blue"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/bill_delivery_deduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8000"
+                    android:textSize="14sp"
+                    android:layout_marginTop="22dp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/blue"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/bill_registration_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8000"
+                    android:textSize="14sp"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="end"
+                    android:visibility="visible"
+                    android:textColor="@color/blue"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/bill_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8000"
+                    android:textSize="14sp"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/blue"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

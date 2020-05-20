@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/update_offer_popup"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:layout_gravity="bottom"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Edit your offer"
+            android:textColor="#000000"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/popup_update_price_box"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:hint="₹"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="18sp"
+            >
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="Note: Contact seller to make sure he agrees before updating final offer"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:background="@color/colorPrimary">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:weightSum="2"
+            android:gravity="center"
+            android:background="@color/colorPrimary">
+
+            <Button
+                android:id="@+id/popup_update_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:text="UPDATE OFFER"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:background="@drawable/register_a_device_button">
+
+            </Button>
+
+            <Button
+                android:id="@+id/popup_Reject_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:text="REJECT OFFER"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:background="@drawable/register_a_device_button">
+
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

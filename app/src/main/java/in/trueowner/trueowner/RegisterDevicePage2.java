@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -24,8 +25,8 @@ public class RegisterDevicePage2 extends AppCompatActivity {
     ImageView backbutton;
     EditText pricepurchase, mobileno;
     TextView datepurchase;
-    FloatingActionButton submitbutton;
-    String datepurchasetemp, pricepurchasetemp, mobilenotemp, brandtemp, modeltemp, imei1temp, imei2temp, serialnotemp;
+    Button submitbutton;
+    String datepurchasetemp, pricepurchasetemp, mobilenotemp, brandtemp, modeltemp, imei1temp, imei2temp, serialnotemp, picbilltemp;
     public long day1, month1, year1,price1;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
 
@@ -37,7 +38,7 @@ public class RegisterDevicePage2 extends AppCompatActivity {
         datepurchase = (TextView) findViewById(R.id.register_date_purchase);
         pricepurchase = (EditText) findViewById(R.id.register_price_purchase);
         mobileno = (EditText) findViewById(R.id.register_mobile_no);
-        submitbutton = (FloatingActionButton) findViewById(R.id.register_submit_button_2);
+        submitbutton = (Button) findViewById(R.id.register_submit_button2);
 
         Intent intent = getIntent();
          brandtemp = intent.getExtras().getString("Brand");
@@ -45,6 +46,8 @@ public class RegisterDevicePage2 extends AppCompatActivity {
          imei1temp = intent.getExtras().getString("IMEI1");
          imei2temp = intent.getExtras().getString("IMEI2");
          serialnotemp = intent.getExtras().getString("SerialNo");
+        picbilltemp = intent.getExtras().getString("PicBill");
+
 
 
 
@@ -105,6 +108,8 @@ public class RegisterDevicePage2 extends AppCompatActivity {
         mobilenotemp = mobileno.getText().toString().trim();
 
 
+
+
         if(!validate()){
 
 
@@ -115,7 +120,7 @@ public class RegisterDevicePage2 extends AppCompatActivity {
 
 
             price1 = Long.valueOf(pricepurchasetemp);
-            Intent intent = new Intent(RegisterDevicePage2.this, RegisterDevicePage3.class);
+            Intent intent = new Intent(RegisterDevicePage2.this, RegisterDevicePage4.class);
             intent.putExtra("Brand",brandtemp);
             intent.putExtra("Model",modeltemp);
             intent.putExtra("IMEI1",imei1temp);
@@ -126,6 +131,7 @@ public class RegisterDevicePage2 extends AppCompatActivity {
             intent.putExtra("YearPurchase",year1);
             intent.putExtra("PricePurchase",price1);
             intent.putExtra("MobileNo",mobilenotemp);
+            intent.putExtra("PicBill", picbilltemp);
             startActivity(intent);
 
         }

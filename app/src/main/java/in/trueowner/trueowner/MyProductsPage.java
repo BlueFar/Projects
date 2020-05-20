@@ -19,8 +19,9 @@ public class MyProductsPage extends AppCompatActivity {
 
     private Intent intent1;
     private ImageView backbutton;
+    String userid;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
-    private CollectionReference productRef = db.collection("Marketplace");
+
 
     private MyProducts_Adapter adapter;
 
@@ -28,6 +29,7 @@ public class MyProductsPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_products_page);
+
 
         backbutton = (ImageView) findViewById(R.id.my_products_back_button);
 
@@ -44,8 +46,9 @@ public class MyProductsPage extends AppCompatActivity {
 
     private void setUpRecyclerView() {
 
+        CollectionReference productRef = db.collection("Users").document(userid).collection("RegisteredProducts");
         Query query = productRef
-                .orderBy("Name");
+                .orderBy("ProductName");
         FirestoreRecyclerOptions<MyProducts_Get_Set> options = new FirestoreRecyclerOptions.Builder<MyProducts_Get_Set>()
                 .setQuery(query, MyProducts_Get_Set.class)
                 .build();

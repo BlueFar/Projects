@@ -11,6 +11,7 @@ import androidx.core.content.FileProvider;
 import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -37,16 +38,13 @@ import static android.os.Environment.getExternalStoragePublicDirectory;
 
 public class RegisterDevicePage3 extends AppCompatActivity {
 
-    FloatingActionButton submitbutton;
     ImageView backbutton, imageupload, browse;
-    String brandtemp, modeltemp, imei1temp, imei2temp, serialnotemp, mobilenotemp, picbilltemp;
     Uri picbill;
-    public long day1, month1, year1, price1;
     File file;
 
     private static final int Camera_Request_code = 1, Read_Request_code = 3;
     private int CAMERA_PERMISSION_CODE = 2, READ_PERMISSION_CODE = 4, WRITE_PERMISSION_CODE = 6;
-    Boolean camera = false, write = false;
+    Boolean camera = false, write = false, read = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,19 +54,6 @@ public class RegisterDevicePage3 extends AppCompatActivity {
         backbutton = (ImageView) findViewById(R.id.register_back_button3);
         imageupload = (ImageView) findViewById(R.id.register_image_upload);
         browse = (ImageView) findViewById(R.id.register_browse);
-
-
-       Intent intent = getIntent();
-         brandtemp = intent.getExtras().getString("Brand");
-         modeltemp = intent.getExtras().getString("Model");
-         imei1temp = intent.getExtras().getString("IMEI1");
-         imei2temp = intent.getExtras().getString("IMEI2");
-         serialnotemp = intent.getExtras().getString("SerialNo");
-         day1 = intent.getExtras().getLong("DayPurchase");
-         month1 = intent.getExtras().getLong("MonthPurchase");
-         year1 = intent.getExtras().getLong("YearPurchase");
-         price1 = intent.getExtras().getLong("PricePurchase");
-        mobilenotemp = intent.getExtras().getString("MobileNo");
 
 
         backbutton.setOnClickListener(new View.OnClickListener() {
@@ -278,9 +263,8 @@ public class RegisterDevicePage3 extends AppCompatActivity {
         if (requestCode == READ_PERMISSION_CODE) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
-                Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                intent.setType("image/*");
-                startActivityForResult(intent, Read_Request_code);
+                read = true;
+                finaloutcome1();
 
             } else {
 
@@ -323,6 +307,32 @@ public class RegisterDevicePage3 extends AppCompatActivity {
 
         }
 
+        else {
+
+
+        }
+
+    }
+
+    private void finaloutcome1() {
+
+        if (read.equals(true)) {
+
+            Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+            intent.setType("image/*");
+            startActivityForResult(intent, Read_Request_code);
+
+
+
+
+        }
+
+        else {
+
+            Toast.makeText(RegisterDevicePage3.this, "Dont have the permission", Toast.LENGTH_SHORT).show();
+
+        }
+
     }
 
     @Override
@@ -332,23 +342,18 @@ public class RegisterDevicePage3 extends AppCompatActivity {
         if (requestCode == Camera_Request_code && resultCode == RESULT_OK) {
 
 
+
             if (picbill != null) {
 
                 Toast.makeText(RegisterDevicePage3.this, "Image selected", Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(RegisterDevicePage3.this, RegisterDevicePage4.class);
-                intent.putExtra("Brand",brandtemp);
-                intent.putExtra("Model",modeltemp);
-                intent.putExtra("IMEI1",imei1temp);
-                intent.putExtra("IMEI2",imei2temp);
-                intent.putExtra("SerialNo",serialnotemp);
-                intent.putExtra("DayPurchase",day1);
-                intent.putExtra("MonthPurchase",month1);
-                intent.putExtra("YearPurchase",year1);
-                intent.putExtra("PricePurchase",price1);
-                intent.putExtra("MobileNo",mobilenotemp);
+                Intent intent = new Intent(RegisterDevicePage3.this, RegisterDevicePage.class);
                 intent.putExtra("PicBill", picbill.toString());
                 startActivity(intent);
+
+            } else {
+
+                Toast.makeText(RegisterDevicePage3.this, "Image not selected", Toast.LENGTH_SHORT).show();
 
             }
 
@@ -357,25 +362,25 @@ public class RegisterDevicePage3 extends AppCompatActivity {
 
         else if (requestCode == Read_Request_code && resultCode == RESULT_OK) {
 
+            picbill = data.getData();
+
             if (picbill != null) {
 
                 Toast.makeText(RegisterDevicePage3.this, "Image selected", Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(RegisterDevicePage3.this, RegisterDevicePage4.class);
-                intent.putExtra("Brand",brandtemp);
-                intent.putExtra("Model",modeltemp);
-                intent.putExtra("IMEI1",imei1temp);
-                intent.putExtra("IMEI2",imei2temp);
-                intent.putExtra("SerialNo",serialnotemp);
-                intent.putExtra("DayPurchase",day1);
-                intent.putExtra("MonthPurchase",month1);
-                intent.putExtra("YearPurchase",year1);
-                intent.putExtra("PricePurchase",price1);
-                intent.putExtra("MobileNo",mobilenotemp);
+
+                Intent intent = new Intent(RegisterDevicePage3.this, RegisterDevicePage.class);
                 intent.putExtra("PicBill", picbill.toString());
                 startActivity(intent);
 
+            } else {
+
+                Toast.makeText(RegisterDevicePage3.this, "Image not selected", Toast.LENGTH_SHORT).show();
+
             }
+
+
+
         }
 
     }

@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/cardview_whislist"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="120dp"
     xmlns:cardview="http://schemas.android.com/apk/res-auto"
     cardview:cardCornerRadius="4dp"
     >
@@ -11,18 +11,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:background="#ffffff"
+        android:background="@color/colorPrimary"
         >
 <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:padding="10dp"
+    android:padding="5dp"
     android:orientation="vertical">
 
     <ImageView
         android:id="@+id/item_image1_id"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginTop="15dp"
         android:padding="10dp"
         android:scaleType="centerCrop">
@@ -39,63 +39,62 @@
 
             <TextView
                 android:id="@+id/item_name_id"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="Product name"
-                android:textSize="13sp"
+                android:textSize="12sp"
                 android:textColor="#000000"
-                android:layout_gravity="center"
-                android:padding="10dp"
+                android:layout_gravity="left"
+                android:paddingRight="5dp"
                 >
 
             </TextView>
 
             <TextView
                 android:id="@+id/item_condition_id"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_gravity="left"
                 android:text="Condition"
-                android:textSize="13sp"
+                android:textSize="12sp"
                 android:textColor="@color/hint"
-                android:padding="10dp">
+                android:padding="5dp">
 
             </TextView>
 
             <TextView
                 android:id="@+id/item_price_id"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="₹ 8000"
                 android:textColor="#F14C38"
-                android:textSize="18sp"
-                android:layout_gravity="center"
-                android:padding="10dp">
+                android:textSize="14sp"
+                android:layout_gravity="left"
+                android:paddingRight="5dp">
 
             </TextView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/item_delete"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/delete_hint_24dp"
-                    android:layout_gravity="end"
-                    >
-                </ImageView>
-            </LinearLayout>
-
-
-
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="end"
+            android:layout_gravity="end"
+            >
 
-
+            <ImageView
+                android:id="@+id/item_delete"
+                android:layout_width="50dp"
+                android:layout_height="120dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/delete_hint_24dp"
+                android:layout_gravity="end"
+                >
+            </ImageView>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/item_description_id"

@@ -478,19 +478,7 @@
                 android:layout_weight="1.4"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="bottom"
-                    android:layout_marginTop="15dp"
-                    android:text="Or"
-                    android:textAlignment="center"
-                    android:textColor="@color/hint"
-                    android:textSize="18dp"
-                    android:textStyle="normal">
 
-
-                </TextView>
 
             </LinearLayout>
 
@@ -568,15 +556,6 @@
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="5dp"
-                    android:text="Signin with"
-                    android:textAlignment="center"
-                    android:textColor="#F14C38"
-                    android:textSize="18dp"
-                    android:textStyle="normal"></TextView>
 
             </LinearLayout>
 
@@ -613,20 +592,7 @@
                 android:paddingBottom="20dp">
 
 
-                <Button
-                    android:id="@+id/facebook_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginRight="25dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@drawable/facebook_login"
-                    android:text="facebook"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorAccent">
 
-                </Button>
 
 
 
@@ -638,17 +604,7 @@
                 android:orientation="horizontal"
                 android:layout_weight="1">
 
-                <Button
-                    android:id="@+id/google_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/edit_text_login"
-                    android:layout_marginBottom="41dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="3dp"
-                    android:text="Google"
-                    android:drawableStart="@drawable/google_logo"></Button>
+
 
             </LinearLayout>
 
